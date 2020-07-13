@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sign Up Page</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/form-validation.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Sign Up </h1>
+            <div id="inner-container">
+                <form method="get" action="welcome.html" id="signUpForm">
+                    <label for="firstname">First Name: </label>
+                        <input type="text" name="firstName" placeholder="Enter First Name">
+                    <br />
+                    <label for="lastname">Last Name: </label>
+                        <input type="text" name="lastName" placeholder="Enter Last Name">
+                    <br />
+                    <br />
+                    <label for="gender">Gender: </label>
+                        <input type="radio" name="gender" value="m"> Male 
+                        <input type="radio" name="gender" value="f"> Female 
+                    <br />
+                    <br />
+                    <label for="zip">Zip Code: </label>
+                        <input id="zip" type="text" name="zip" placeholder="Enter Zip Code">
+                    <br />
+                    <label for="city">City: </label>
+                        <span id="city"></span>
+                    <br />
+                    <label for="latitude">Latitude: </label>
+                        <span id="latitude"></span>
+                    <br />
+                    <label for="longitude">Longitude: </label>
+                        <span id="longitude"></span>
+                    <br />
+                    <br />
+                    <label for="state">State: </label>
+                        <select id="state" name="state">
+                            <option value=""> Select One </option>
+                        </select>
+                    <br />
+                    <label for="county">Select a County: </label> 
+                        <select id="county" name="county"></select>
+                    <br />
+                    <br />
+                    <label for="username">Desired Username: </label> 
+                        <input id="username" type="text" name="username"
+                            placeholder="Enter a Username">
+                        <span id="usernameError" class="error"></span>
+                        <br />
+                    <br />
+                    <label for="password">Password: </label> 
+                        <input id="password" type="password" name="password" 
+                            placeholder="Enter a Password">
+                        <span id="passwordError" class="error"></span>
+                    <br />
+                    <label for="passwordAgain">Password Again: </label> 
+                        <input type="password" name="passwordAgain" 
+                            placeholder="Verify Password"/>
+                        <span id="passwordAgainError" class="error"></span>
+                        <br />
+                        <br />
+                    <br />
+                    <br />
+                    <button type="submit"> Sign Up! </button>
+                </form> 
+                </div>
+        </div>
+    </body>
+</html>

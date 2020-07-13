@@ -86,8 +86,8 @@ $(document).ready(function() {
             $("#usernameError").html("Username is required");
         }
         
-        if ($("#password").val().length <= validPasswordLength) {
-            ($("#passwordError").html("Password must be at least 6 characters"))
+        if ($("#password").val().length < validPasswordLength) {
+            $("#passwordError").html("Password must be at least 6 characters");
             isValid = false;
         }
         

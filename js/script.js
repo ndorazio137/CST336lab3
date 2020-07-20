@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     $("#zip").on("change", function() {
         $.ajax({
-            method: "GET",
+            method: "POST",
             url: "https://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
             dataType: "json",
             data: { "zip": $("#zip").val()},
